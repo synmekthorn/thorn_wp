@@ -1,0 +1,33 @@
+/* === Color System === */
+$white:                #ffffff;
+$black:                #1f1f1f;
+$gray-100:             #f8f9fa;
+$gray-200:             #e9ecef;
+$gray-300:             #dee2e6;
+$gray-400:             #ced4da;
+$gray-500:             #adb5bd;
+$gray-600:             #6c757d;
+$gray-700:             #495057;
+$gray-800:             #343a40;
+$gray-900:             #212529;
+
+$primary:              #45bda2; // Thorn brand accent
+$secondary:            $gray-600;
+$success:              #28a745;
+$info:                 #17a2b8;
+$warning:              #ffc107;
+$danger:               #dc3545;
+$light:                $gray-100;
+$dark:                 $gray-900;
+
+/* === Body === */
+$body-bg:              $white;
+$body-color:           $black;
+
+
+/* === Borders === */
+$border-width:         1px;
+$border-color:         $gray-300;
+$border-radius:        0.5rem;
+$border-radius-lg:     0.75rem;
+$border-radius-sm:     0.25rem;

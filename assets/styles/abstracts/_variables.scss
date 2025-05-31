@@ -1,0 +1,46 @@
+/* ==========================================================================
+   Thorn Framework — Bootstrap-Compatible Variables
+   Project by Synmek
+   Centralized variable overrides for Bootstrap consistency and theming
+========================================================================== */
+
+/* === Spacing === */
+$spacer:               1rem;
+$spacers: (
+  0: 0,
+  1: 0.25rem,
+  2: 0.5rem,
+  3: 1rem,
+  4: 1.5rem,
+  5: 3rem
+);
+
+
+/* === Shadows === */
+$box-shadow-sm:        0 1px 2px rgba(0, 0, 0, 0.05);
+$box-shadow:           0 4px 6px rgba(0, 0, 0, 0.1);
+$box-shadow-lg:        0 10px 15px rgba(0, 0, 0, 0.15);
+
+
+
+/* === Container Widths === */
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+);
+
+/* === Z-index === */
+$zindex-dropdown:      1000;
+$zindex-sticky:        1020;
+$zindex-fixed:         1030;
+$zindex-modal-backdrop:1040;
+$zindex-modal:         1050;
+$zindex-popover:       1060;
+$zindex-tooltip:       1070;
+
+/* === Transitions === */
+$transition-base:      all 0.3s ease-in-out;
+$transition-fade:      opacity 0.15s linear;

@@ -1,0 +1,14 @@
+
+/* === Typography === */
+$font-family-base:     'Inter', system-ui, -apple-system, sans-serif;
+$font-family-sans-serif: $font-family-base;
+$font-family-monospace: 'SFMono-Regular', Menlo, Monaco, Consolas, monospace;
+
+$font-size-base:       1rem; // 16px
+$font-size-sm:         0.875rem;
+$font-size-lg:         1.25rem;
+$line-height-base:     1.6;
+
+$headings-font-family: $font-family-base;
+$headings-line-height: 1.3;
+$headings-font-weight: 700;

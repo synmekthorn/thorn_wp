@@ -1,0 +1,118 @@
+//We are still using @import due to bootstrap and fontawesome not supporting @use jusat yet. Will be updated in the future to @use across the board. 
+
+$fa-font-path: "../fonts";
+
+// =============================================================================
+// ABSTRACTS
+// Reusable variables, mixins, functions, and Sass maps used across the theme.
+// These files generate no direct CSS output.
+// Add new tokens (e.g., $z-index, $easing) or mixins here.
+// =============================================================================
+
+@import "abstracts/variables";     // Global color palette, spacing, typography scales
+@import "abstracts/colors";        // Structured color map by semantic name
+@import "abstracts/mixins";        // Mixins like clearfix, media queries, etc.
+@import "abstracts/functions";     // Custom Sass functions (e.g., strip-units, rem-calc)
+@import "abstracts/typography";    // Type sizes, font stacks, and type utilities
+@import "abstracts/breakpoints";   // Device breakpoints map and helpers
+
+
+// 🚨 AUTO-INJECTED VENDOR IMPORTS — DO NOT EDIT BELOW
+
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+// 🚨 END AUTO-INJECT
+
+
+
+// =============================================================================
+// BASE
+// Base HTML elements and global resets. Styles for headings, links, forms, etc.
+// These create a consistent visual foundation across the project.
+// =============================================================================
+
+@import "base/reset";          // Normalize / reset styles
+@import "base/typography";     // Base styles for headings, paragraphs, etc.
+@import "base/forms";          // Input fields, textareas, labels
+@import "base/links";          // Anchor tag styling and states
+
+
+// =============================================================================
+// LAYOUT
+// Structural elements such as the header, footer, sidebar, and grid system.
+// These manage the overall page skeleton and positioning.
+// =============================================================================
+
+@import "layout/containers";   // Max-width wrappers and page padding
+@import "layout/grid";         // Custom or Bootstrap grid overrides
+@import "layout/header";       // Top navigation / branding area
+@import "layout/footer";       // Footer structure and spacing
+@import "layout/sidebar";      // Side widgets or secondary content areas
+
+
+// =============================================================================
+// COMPONENTS
+// Reusable, interface-level pieces like buttons, modals, and navigation.
+// Each file should define a single UI element or pattern.
+// Add new components here as needed.
+// =============================================================================
+
+@import "components/buttons";      // Primary, secondary, link buttons
+@import "components/forms";        // Enhanced form elements (custom selects, etc.)
+@import "components/cards";        // Card layout components
+@import "components/navigation";   // Nav menus, breadcrumbs, mobile nav
+@import "components/modal";        // Modal windows and overlays
+@import "components/breadcrumbs";   // Breadcrumb navigation
+
+
+// =============================================================================
+// PAGES
+// Page-specific styles scoped to individual templates (home, about, etc).
+// Useful for one-off designs or page-level overrides.
+// =============================================================================
+
+@import "pages/home";       // Homepage specific styles
+@import "pages/about";      // About page layout tweaks
+
+
+// =============================================================================
+// WORDPRESS
+// Overrides and additions related to WordPress core output and editor styles.
+// Includes Gutenberg, WP classes, and TinyMCE alignment.
+// =============================================================================
+
+@import "wordpress/wp-classes";   // Classes injected by WP: alignwide, has-image, etc.
+@import "wordpress/gutenberg";   // Core block editor styling and layout
+
+
+// =============================================================================
+// UTILITIES
+// Helper classes like visibility, spacing, text utils, and animation.
+// These can be used across any component or layout.
+// =============================================================================
+
+@import "utilities/helpers";         // Utility classes (e.g., .u-text-center)
+@import "utilities/animations";      // Keyframes and motion helpers
+@import "utilities/accessibility";   // Screen-reader only styles, focus outlines
+
+
+// =============================================================================
+// THEMES
+// Style variations like dark mode or alternate color schemes.
+// Enable conditionally or through class-based toggles.
+// =============================================================================
+
+@import "themes/dark";         // Dark mode styles (opt-in)
+
+
+// =============================================================================
+// VENDOR IMPORTS
+// Third-party libraries like Bootstrap and Font Awesome.
+// These use @import until fully compatible with @import and Sass modules.
+// DO NOT MODIFY THIS SECTION — auto-injected by the build system.
+// =============================================================================
+
+

@@ -1,0 +1,49 @@
+{
+  "name": "synmek-thorn",
+  "version": "1.0.0",
+  "author": "Synmek Ltd.",
+  "private": true,
+  "scripts": {
+    "inject:scss": "node ./utils/scripts/inject-vendor-scss.js",
+    "build": "cross-env NODE_ENV=production webpack --mode production",
+    "dev": "cross-env NODE_ENV=development webpack --mode development --watch",
+    "lint": "stylelint \"assets/styles/**/*.scss\""
+  },
+  "browserslist": [
+    "defaults",
+    "not IE 11"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.27.3",
+    "@babel/preset-env": "^7.27.2",
+    "autoprefixer": "^10.4.16",
+    "babel-loader": "^10.0.0",
+    "browser-sync": "^3.0.4",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "copy-webpack-plugin": "^13.0.0",
+    "cross-env": "^7.0.3",
+    "css-loader": "^7.1.2",
+    "css-minimizer-webpack-plugin": "^7.0.2",
+    "file-loader": "^6.2.0",
+    "fs-extra": "^11.3.0",
+    "mini-css-extract-plugin": "^2.9.2",
+    "postcss": "^8.5.4",
+    "postcss-loader": "^8.1.1",
+    "sass": "^1.89.0",
+    "sass-loader": "^16.0.5",
+    "style-loader": "^4.0.0",
+    "stylelint": "^16.3.1",
+    "stylelint-config-standard-scss": "^12.0.0",
+    "terser-webpack-plugin": "^5.3.14",
+    "webpack": "^5.99.9",
+    "webpack-cli": "^6.0.1",
+    "webpack-manifest-plugin": "^5.0.1"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.7.2",
+    "@glidejs/glide": "^3.7.1",
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "5",
+    "jquery": "^3.7.1"
+  }
+}

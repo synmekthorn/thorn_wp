@@ -1,0 +1,10 @@
+{
+    "require": {
+        "guzzlehttp/guzzle": "^7.9",
+        "phpmailer/phpmailer": "^6.9",
+    },
+    "config": {
+
+        "platform-check": false
+    }
+}
