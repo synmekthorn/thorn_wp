@@ -35,7 +35,7 @@
 1. Clone the repo into your `wp-content/themes/` folder:
 
    ```bash
-   git clone https://github.com/yourusername/thorn-theme.git thorn
+   git clone https://github.com/synmekthorn/thorn-theme.git thorn
    cd thorn
    ```
 
@@ -133,8 +133,8 @@ styles/
 
 ➡ To add a new file:
 - Create it in the appropriate folder.
-- Add `@use "folder/filename";` in `main.scss`.
-
+- Add `@import "folder/filename";` in `main.scss`.
+- Temporarily using @import instead of @use for compatibility with Bootstrap & Fontawesome until they update. 
 ---
 
 ## 📜 JavaScript Routing (`assets/scripts/main.js`)
@@ -182,9 +182,7 @@ Loaded in `/functions.php` from:
 
 ## 📜 License
 
-**MIT License**  
-You may use Thorn for personal or commercial projects without attribution.  
-You may **not** sell it as a standalone theme or framework.
+**MIT License**
 
 See [`LICENSE.md`](./LICENSE.md) for details.
 
